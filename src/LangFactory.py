@@ -10,8 +10,7 @@ config.read('./config.ini')
 
 class JumanTokenizer:
     def __init__(self):
-        self.juman = Juman(command=config['Juman']['command'],
-                           option=config['Juman']['option'])
+        self.juman = Juman()
 
     def __call__(self, text):
         result = self.juman.analysis(text)
@@ -44,7 +43,7 @@ class JapaneseWorker:
                                             do_basic_tokenize=False)
         self.cls_id = self.bert_tokenizer.vocab['[CLS]']
         self.mask_id = self.bert_tokenizer.vocab['[MASK]']
-        self.bert_model = 'PATH_TO_BERTJPN'
+        self.bert_model = 'model'
 
         self.cp = 'checkpoint/jp/cp_step_710000.pt'
         self.opt = 'checkpoint/jp/opt_step_710000.pt'

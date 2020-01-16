@@ -1,3 +1,15 @@
+##
+YouyakuMan# python3 youyakuman.py  -txt_file testjp.txt  -lang jp
+
+YouyakuMan]# ls model/
+bert_config.json  pytorch_model.bin  vocab.tx
+
+
+YouyakuMan]# ls checkpoint/jp/
+cp_step_710000.pt  opt_step_710000.pt
+
+
+
 # YouyakuMan 
 
  [![Unstable](https://poser.pugx.org/ali-irawan/xtra/v/unstable.svg)](*https://poser.pugx.org/ali-irawan/xtra/v/unstable.svg*)  [![License](https://poser.pugx.org/ali-irawan/xtra/license.svg)](*https://poser.pugx.org/ali-irawan/xtra/license.svg*) 
